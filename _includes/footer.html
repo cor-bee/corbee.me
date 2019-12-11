@@ -1,0 +1,35 @@
+<footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+    <ul class="footer-links">
+    {% if site.social.telegram %}
+      <li>
+        <a href="https://t.me/{{ site.social.telegram }}" rel="noreferrer noopener" target="_blank" title="Telegram Contact">
+          {% include svg-icon.html icon="telegram" %}
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.bitcoin %}
+      <li>
+        <a href="https://blockexplorer.com/address/{{ site.social.bitcoin }}" rel="noreferrer noopener" target="_blank" title="Bitcoin">
+          {% include svg-icon.html icon="bitcoin" %}
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.ethereum %}
+      <li>
+        <a href="https://etherscan.io/address/{{ site.social.ethereum }}" rel="noreferrer noopener" target="_blank" title="Ethereum">
+          {% include svg-icon.html icon="ethereum" %}
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}" title="Email">
+          {% include svg-icon.html icon="email" %}
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+  <p class="footer-logo">
+    Powered by <a href="https://jekyllrb.com" rel="noreferrer noopener" target="_blank" title="Jekyll Site">Jekyll</a> & <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Download Chalk">Chalk</a>
+  </p>
+</footer>

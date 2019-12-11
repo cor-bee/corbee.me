@@ -1,0 +1,69 @@
+# Mandatory settings
+
+blog_theme: dark
+name: ⁠⁠Illia Pyshniak • @corbee
+paginate: 25
+url: https://corbee.me
+
+
+# Optional settings
+
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
+telegram_identifier: JAGsH3UQ # Add your Telegram Comments identifier
+ga_analytics: UA-154356645-1 # Add your GA Tracking Id
+local_fonts: false # Change to true if you wish to use local fonts
+rss_enabled: true # Change to false if not
+scrollappear_enabled: true # Change to false to disable
+tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
+theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
+social:
+  devto: corbee
+  habr: corbee
+  behance: corbee
+  email: corbee@pm.me
+  github: cor-bee
+  telegram: corbee
+  telegram_channel: cor_bee
+
+
+# Important settings (change at own risk)
+
+assets:
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
+  sources:
+    - _assets/icons
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/yarn
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - vendor/
+  - yarn.lock
+plugins:
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+paginate_path: /posts/page/:num/
+permalink: posts/:slug
