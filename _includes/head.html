@@ -10,6 +10,7 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
+  <meta name="author" content="Illia Pyshniak">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
@@ -21,10 +22,16 @@
       <meta property="og:image" content="{{ page.thumb_image }}">
       <meta name="twitter:image" content="{{ page.thumb_image }}">
     {% else %}
+      <figure class="graf--layoutFillWidth">
+        <img src="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+      </figure>
       <meta property="og:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
       <meta name="twitter:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
     {% endif %}
   {% else %}
+    <figure class="graf--layoutFillWidth">
+      <img src="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+    </figure>
     <meta property="og:image" content="{{ site.url }}{% asset og-image.png @path %}">
     <meta name="twitter:image" content="{{ site.url }}{% asset og-image.png @path %}">
   {% endif %}
