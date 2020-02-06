@@ -155,6 +155,10 @@ img {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 ::selection {
   color: $white;
   background-color: $gray-darkest;
