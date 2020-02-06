@@ -3,7 +3,7 @@
 Desktop.ini
 Thumbs.db
 
-# Project
+## Project
 !.keep
 *.sass-cache
 /_site/
