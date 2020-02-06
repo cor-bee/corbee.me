@@ -19,6 +19,9 @@
 
   {% if page.thumb_image %}
     {% if page.thumb_image contains '://' %}
+      <figure class="graf--layoutFillWidth">
+        <img src="{{ page.thumb_image }}">
+      </figure>
       <meta property="og:image" content="{{ page.thumb_image }}">
       <meta name="twitter:image" content="{{ page.thumb_image }}">
     {% else %}
