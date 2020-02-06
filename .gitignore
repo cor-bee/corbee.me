@@ -3,11 +3,11 @@
 Desktop.ini
 Thumbs.db
 
-## Project
+# Project
 !.keep
-*.sass-cache
-/_site/
 /.jekyll-cache/
 Gemfile.lock
 package-lock.json
 .idea
+*.sass-cache
+/_site/
