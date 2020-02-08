@@ -14,9 +14,6 @@
           </header>
 
           <div class="article-content">
-            {% if page.thumb_image %}
-            <img src="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}" class="hide">
-            {% endif %}
             {{ content }}
           </div>
           <!--<div class="article-share">
