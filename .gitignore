@@ -11,3 +11,4 @@ package-lock.json
 .idea
 *.sass-cache
 /_site/
+_assets/images/og-image.psd
