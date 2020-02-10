@@ -12,3 +12,5 @@ package-lock.json
 *.sass-cache
 /_site/
 _assets/images/og-image.psd
+_assets/images/ivfaq1.psd
+_assets/images/logo+text.psd
